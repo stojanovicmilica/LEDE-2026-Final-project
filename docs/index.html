@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Milica's LEDE final project</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-size: 20px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-rendering: optimizeLegibility;
+        }
+
+        .content {
+            max-width: 640px;
+            margin: auto;
+        }
+
+        .header {
+            padding: 3em 0;
+        }
+
+        a {
+            color: #f05349;
+        }
+
+        .footer {
+            background: #e6e2cd;
+            text-align: center;
+            font-size: 0.8em;
+            margin-top: 4em;
+            padding: 4em 0;
+        }
+
+        figure {
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        figcaption {
+            font-size: 0.8em;
+            text-align: center;
+            margin-top: 0.5em;
+            color: #666;
+        }
+
+        h1 {
+            font-family: 'Lora', Georgia, serif;
+            font-weight: bold;
+            font-size: 3em;
+            line-height: 1.1;
+        }
+
+        .subhead {
+            font-family: 'Lora', Georgia, serif;
+        }
+
+        iframe,
+        img,
+        video {
+            max-width: 100%;
+        }
+
+        p {
+            line-height: 1.6;
+            margin: 0;
+            padding-bottom: 1.2em;
+        }
+
+        ul {
+            margin: 0;
+            padding-bottom: 1em;
+            line-height: 1.6;
+        }
+
+        iframe {
+            padding-bottom: 1.2em;
+        }
+
+        code {
+            font-family: 'Courier New', monospace;
+            background: #fff880;
+        }
+
+        .full-width figure {
+            text-align: center;
+        }
+
+        /* margin on mobile */
+        @media (max-width: 640px) {
+            body {
+                font-size: 18px;
+            }
+
+            .content {
+                padding-left: 0.5em;
+                padding-right: 0.5em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <h1>Take care in Serbian traffic in December</h1>
+            <p class="subhead">Data about recorded traffic accidents Serbian
+              police published for the previous decade show that end of the year
+              goes hard for traffic participants in the country.</p>
+        </div>
+        <div class="byline">
+            <p>By <a href="https://www.linkedin.com/in/stojanovicmilica/">Milica Stojanović</a></p>
+        </div>
+    </div>
+    <div class="content">
+        <p>A dark Audi with Austrian plates was flying low on a highway passing through 
+          Suricin, the suburb of Serbian capital Belgrade, on the Friday night of July 24 
+          until police stoped him around 1AM. Law enforcement were in plain civilian car equipped 
+          with specialized electronics including speedometers, so called interceptor vehicle. </p>
+          <p>When Audi came on their radar, the device measured speed of 215 kilometers per hour, 
+          on the road where the speed limit is 100. The highest allowed speed on Serbian highways 
+          is 130.</p>
+          <p>Serbian police said in the press release next morning that the 20 years old driver, 
+          Serbian citizen, was excluded from traffic and that they filed a misdemeanour complaint 
+          against him over violent driving. </p>
+          <p>The police press release, however, brought even more chilling information that 
+          “since the beginning of July, 35 people have lost their lives in traffic accidents, 
+          11 of whom were under the age of 30”. </p>
+          <p>While these casualties are yet to make to the police statistics for 2026, LEDE analyzed 
+          publicly available data about 356,023 traffic accidents Serbian traffic police recorded 
+          from 2015 until mid-2026.</p>
+          <p>In the last decade, 5240 people died in total on Serbian roads. 
+          In over 139 thousands of accidents there were injuries recorder, 
+          while material damage was recorded in over 201 thousands. </p>
+    </div>
+
+    <div class="full-width">
+        <figure>
+            <h3>Types of accidents police recorded</h3>
+            <img alt="Types-of-accidents" src="Types-of-accidents.png">
+        </figure>
+    </div>
+    <div class="full-width">
+        <figure>
+            <h3>Damages in accidents police recorded</h3>
+            <img alt="Damage-in-accidents" src="Damage-in-accidents.png">
+        </figure>
+    </div>
+
+    <div class="content">
+        <p>Police data are structured in couple of categories, but these categories include
+          only one option, meaning that we cannot know if there were some accident in which
+          multiple things happened. It is not clear from their data how they categorised events
+          in which, for example, both injuries and material damage happened.</p>
+        <p>Because of this, when analyzing distribution of accidents per cities or per day, 
+          we used only numbers of dead people, as it is clear they could only be calculated 
+          as unique cases.</p>
+        <p>According to police data, people in Serbia in past decade most often died in traffic accidents 
+          that included only one vehicle, followed by those that included pedestrians.</p>
+    </div>
+
+    <div class="full-width">
+        <figure>
+            <h3>Traffic accidents (TAs) sorted by death outcome</h3>
+            <img alt="Damages-per-type" src="Damages-per-type.png">
+        </figure>
+    </div>
+
+    <div class="content">
+        <p>Majority of death cases were recorded in Serbian capital Belgrade, 
+          which also saw the biggest number of accidents in total. 
+          This came as expected, having in mind it is the biggest and the busiest city in the country 
+          and that some highways are passing throughout it.</p>
+        <p>December 14 2018 is the single date with the highest recorded number of traffic accidents, 
+          170 in total. According to the news archive, 
+          parts of Serbia were hit with strong snowstorm that Friday.</p>
+    </div>
+
+    <div class="full-width">
+        <figure>
+            <h3>Fridays see most traffic accidents...</h3>
+            <img alt="Sorted-by-weekday" src="Sorted-by-weekday.png">
+        </figure>
+    </div>
+    <div class="full-width">
+        <figure>
+            <h3>... while Saturdays see most death cases</h3>
+            <img alt="Death-cases-per-week" src="Death-cases-per-week.png">
+        </figure>
+    </div>
+
+    <div class="content">
+        <p>December 30 is the single most common date with traffic accidents in previous decade, 
+          recording 1296 traffic accidents in total for 10 years. 
+          Out of top 10 dates with highest number of accidents in previous decade, 
+          nine are in December, including the New Years eves, 
+          which saw 1223 traffic accidents in total.</p>
+    </div>
+
+    <div class="full-width">
+        <figure>
+            <h3>Dates in years that saw most of accidents</h3>
+            <img alt="Most-common-dates-in-years" src="Most-common-dates-in-years.png">
+        </figure>
+    </div>
+    <div class="full-width">
+        <figure>
+            <h3>December in general saw most of accidents...</h3>
+            <img alt="Sorted-per-month" src="Sorted-per-month.png">
+        </figure>
+    </div>
+
+    <div class="content">
+        <p>One of such was the accident in which two person died on December 1 last year
+          in Serbian second biggest city of Novi Sad.</p>
+        <p>A 26 years old driver of BMW, according to media report, crossed into the opposite lane and hit a cab, 
+          in which were driver and three young female passengers. 
+          Cab driver died in the hospital following the accident 
+          while one of the passengers, who was heavily injured, died couple of months later.</p>
+        <p>The BMW driver remains in custody and the indictment was filed against him in June.</p>
+        <p>LEDE analysis, however, shows that, Septmber is the month 
+          that sees most of death cases, followed by August
+          and December.</p>
+    </div>
+     <div class="full-width">
+        <figure>
+            <h3>...but September saw most death cases</h3>
+            <img alt="Death-cases-per-month" src="Death-cases-per-month.png">
+        </figure>
+    </div>
+
+    <div class="footer">
+        <div class="content">
+            <p>You can find the code for this template <a href="https://github.com/jsoma/page-templates/">here</a>.</p>
+        </div>
+    </div>
+</body>
+
+</html>
