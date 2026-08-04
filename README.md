@@ -1,4 +1,4 @@
-# LEDE 2026 Final project README
+# LEDE 2026 Final project
 
 **Data gathering**
 
